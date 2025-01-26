@@ -15,3 +15,13 @@
 - Properties and Methods
 - Collection data types(arrays and hashes)
 - Iterating on collections
+
+### Mod 3
+
+- Troubleshooting Ruby
+  - Ruby Errors
+    - Syntax
+    - Logical
+    - No method found
+  - Debugging code with `pry`
+    - require "pry";binding.pry
