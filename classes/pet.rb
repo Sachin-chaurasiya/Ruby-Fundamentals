@@ -22,6 +22,10 @@ class Pet
     puts "Species: #{@species}"
   end
 
+  # alias method
+  # alias methods are used to create a new method that points to an existing method and can be used interchangeably
+  alias :show_info :display_info
+
   # class method
   def self.list_all_pets
     @@all_pets.each do |pet|
@@ -33,5 +37,10 @@ class Pet
   # virtual attribute
   def is_cat?
     @species == 'Cat'
+  end
+
+  # method_missing is called when the method does not exist
+  def method_missing(method_name, *args)
+    puts "Method '#{method_name}' does not exist"
   end
 end
